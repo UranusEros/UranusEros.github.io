@@ -3,11 +3,11 @@ title:        😈张起灵
 tagline:      我是一个变态
 baseurl:      ""
 paginate:     1
-locale:       "en"
+locale:       "cn"
 
 # About/contact
 author:
-  name:       Author name
+  name:       赵申侃
   url:        http://yourhomepage.com 
 
 # Gems
