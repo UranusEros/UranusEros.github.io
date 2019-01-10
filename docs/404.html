@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Minimalism theme of Jekyll from Crisp"/>
-  <title>Home | Jekyll Crisp Theme</title>
+  <title>404 Not Found | Jekyll Crisp Theme</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="//fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
@@ -14,6 +14,8 @@
   
   <link rel="stylesheet" href="/jekyll-crisp-theme/assets/css/tomorrow-night-eighties.css">
   
+  
+  <script src="/jekyll-crisp-theme/assets/scripts/jquery-3.1.0.min.js"></script>
   
   <link rel="stylesheet" href="/jekyll-crisp-theme/assets/css/style.css">
 </head>
@@ -51,28 +53,32 @@
       <div class="content-wrapper">
         <div class="page">
   <div class="page-main">
-    <div class="page-title" id="latest-posts">Latest Posts</div>
-<div class="archive-main">
-  
-    <div class="archive-item">
-      <div class="archive-date">July 24, 2017</div>
-      <div class="archive-title"><a href="/jekyll-crisp-theme/2017/07/24/introduction-to-jekyll-crisp-theme.html">Introduction to Jekyll Crisp Theme</a></div>
-    </div>
-  
-    <div class="archive-item">
-      <div class="archive-date">July 23, 2017</div>
-      <div class="archive-title"><a href="/jekyll-crisp-theme/2017/07/23/test-for-styles.html">Test for Styles</a></div>
-    </div>
-  
-    <div class="archive-item">
-      <div class="archive-date">July 22, 2017</div>
-      <div class="archive-title"><a href="/jekyll-crisp-theme/2017/07/22/pure-text.html">Pure Text Article</a></div>
-    </div>
-  
-</div>
-<p class="archive-more">
-  <a href="/jekyll-crisp-theme/archive.html">More...</a>
-</p>
+    <div class="page-title">404 Not Found</div>
+
+<p>The resource you requested was not found. To (help me) handle the problem, please report the problem by <a href="https://github.com/crispgm/jekyll-crisp-theme/issues/new?title=[Report]%20404%20Not%20Found" target="_blank">creating an issue</a>.</p>
+
+<p>You may checkout the <a href="/blog.html">latest posts</a>:</p>
+
+<ul>
+
+  <li><a href="/2017/07/24/introduction-to-jekyll-crisp-theme.html">Introduction to Jekyll Crisp Theme</a></li>
+
+  <li><a href="/2017/07/23/test-for-styles.html">Test for Styles</a></li>
+
+  <li><a href="/2017/07/22/pure-text.html">Pure Text Article</a></li>
+
+</ul>
+
+<p>Random beautiful photo from <a href="https://unsplash.com/">Unsplash</a>:</p>
+
+<p><a href="#" id="unsplash"><img src="https://source.unsplash.com/random" alt="" /></a></p>
+
+<script>
+$("#unsplash>img").click(function(){
+  $(this).attr("src", "https://source.unsplash.com/random?t=" + Math.random());
+});
+</script>
+
 
   </div>
 </div>
