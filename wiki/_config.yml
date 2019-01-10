@@ -1,0 +1,7 @@
+title: Wiki | David Zhang
+author: David Zhang
+baseurl: "/wiki"
+exclude:
+  - README.md
+  - LICENSE
+  - /screenshots
