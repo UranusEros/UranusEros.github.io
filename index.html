@@ -1,0 +1,48 @@
+---
+layout: default
+title: {{ site.name }}
+---
+
+<div class="page-title" id="programming">Blog</div>
+<div class="archive-main">
+  {% for post in site.posts  %}
+  <div class="archive-item">
+    <div class="archive-date">{{ post.date | date:"%B %d, %Y" }}</div>
+    <div class="archive-title"><a href="{{ post.permalink }}">{{ post.title }}</a></div>
+  </div>
+  {% endfor %}
+</div>
+
+<!--<div id="home">-->
+  <!--&lt;!&ndash;<h1>Blog Posts</h1>&ndash;&gt;-->
+
+ <!---->
+  <!--&lt;!&ndash;<ul class="posts">&ndash;&gt;-->
+    <!--&lt;!&ndash;{% for post in site.posts %}&ndash;&gt;-->
+      <!--&lt;!&ndash;<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>&ndash;&gt;-->
+    <!--&lt;!&ndash;{% endfor %}&ndash;&gt;-->
+  <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+<!--</div>-->
+
+
+<!-- -&#45;&#45;-->
+<!--title: Blog-->
+<!--permalink: /blog.html-->
+<!-- -&#45;&#45;-->
+
+<!--<div class="page-title" id="programming">Blog</div>-->
+<!--<div class="archive-main">-->
+    <!--{% for post in site.posts %}-->
+    <!--&lt;!&ndash;{% if post.type == "programming" or post.type == "lifestyle" %}&ndash;&gt;-->
+    <!--<div class="archive-item">-->
+        <!--<div class="archive-date">{{ post.date | date:"%B %d, %Y" }}</div>-->
+        <!--<div class="archive-title"><a href="{{ post.permalink }}">{{ post.title }}</a></div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;{% endif %}&ndash;&gt;-->
+    <!--{% endfor %}-->
+    <!--&lt;!&ndash;<p class="archive-more">&ndash;&gt;-->
+        <!--&lt;!&ndash;<a href="/translation_posts.html">Translations</a> |&ndash;&gt;-->
+        <!--&lt;!&ndash;<a href="/legacy_posts.html">Legacy Posts</a> |&ndash;&gt;-->
+        <!--&lt;!&ndash;<a href="http://crispgm.iteye.com/" target="_blank">Oldschool Blog</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;</p>&ndash;&gt;-->
+<!--</div>-->

@@ -1,22 +1,50 @@
 // Theme of Crisp Blog
-// Copyright(c) David Zhang, 2017
+// Copyright (c) David Zhang, 2018
+
+.progress-bar {
+  background-color: $grey-3;
+  height: 2px;
+  position: fixed;
+  top: 0;
+  width: 0;
+  z-index: 101;
+}
 
 .article {
   margin-bottom: 2rem;
   text-align: left;
 
+  a {
+    color: $blue-5;
+  }
+
+  .article-menu {
+    .article-home {
+      float: right;
+    }
+
+    a {
+      color: $grey-9;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
   .article-head {
-    margin-bottom: 4.2rem;
+    margin-bottom: 3.2rem;
     margin-top: 4.2rem;
     text-align: left;
 
     .article-title {
-      color: $sub-color;
+      color: $grey-7;
       font-size: 2.2rem;
     }
 
     .article-date {
-      color: $light-color;
+      color: $grey-5;
       font-size: 1rem;
       margin-top: 1rem;
     }
@@ -24,8 +52,22 @@
 
   .article-main {
     font-size: 1rem;
-    margin-bottom: 3.2rem;
     margin-top: 1.2rem;
+  }
+
+  .article-share {
+    font-size: 1.4rem;
+    margin: 3.2rem 0;
+    text-align: center;
+
+    a {
+      color: $grey-7;
+      padding: 0 .4rem;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 
   // disqus
@@ -37,57 +79,55 @@
 }
 
 h1 {
-  color: $sub-color;
+  color: $grey-7;
   font-size: 2.4rem;
   font-weight: 400;
-  padding-bottom: 1.2rem;
   padding-top: 1.6rem;
   text-align: left;
 }
 
 h2 {
-  color: $sub-color;
+  color: $grey-7;
   font-size: 2rem;
   font-weight: 400;
-  padding-bottom: 1.2rem;
   padding-top: 1.4rem;
   text-align: left;
 }
 
 h3 {
-  color: $sub-color;
+  color: $grey-7;
   font-size: 1.5rem;
   font-weight: 500;
-  padding-bottom: 1.2rem;
   padding-top: 1.2rem;
   text-align: left;
 }
 
 h4 {
-  color: $sub-color;
+  color: $grey-7;
   font-size: 1.2rem;
   font-weight: 600;
-  padding-bottom: .8rem;
   padding-top: .8rem;
   text-align: left;
 }
 
 h5 {
-  color: $sub-color;
+  color: $grey-7;
   font-size: 1rem;
   font-weight: 700;
-  padding-bottom: 0;
   padding-top: .8rem;
   text-align: left;
 }
 
 blockquote {
-  border-left: .2rem solid $border-color;
+  border-left: .2rem solid $grey-3;
   margin-left: 0;
   padding-left: 1rem;
 }
 
 p {
+  // scss-lint:disable VendorPrefix
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
   hyphens: auto;
   line-height: 1.8rem;
   margin-top: 1.5rem;
@@ -100,12 +140,14 @@ sup {
 }
 
 hr {
+  border-top: 1px solid $grey-3;
   margin-bottom: 3rem;
   margin-top: 3rem;
-  width: 3rem;
+  width: 30%;
 }
 
-ul {
+ul,
+ol {
   p {
     margin: 0;
   }
@@ -127,11 +169,11 @@ table {
 
   tr {
     &:hover {
-      background-color: $light-color;
+      background-color: $grey-5;
     }
 
     th {
-      background-color: $light-color;
+      background-color: $grey-5;
       padding: .2rem .4rem;
     }
 

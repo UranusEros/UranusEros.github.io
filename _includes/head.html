@@ -1,19 +1,17 @@
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="{{ site.description }}"/>
-  <title>{{ page.title }} | {{ site.title }}</title>
+  <title>{{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="//fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="/image/logo.png">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/cayman.css">
+
   {% if page.font_awesome != false %}
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/font.css">
   {% endif %}
   {% if page.syntax_highlight != false %}
-  <link rel="stylesheet" href="{{ "/assets/css/tomorrow-night-eighties.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/nord.css">
   {% endif %}
-  {% if page.jquery == true %}
-  <script src="{{ "/assets/scripts/jquery-3.1.0.min.js" | relative_url }}"></script>
-  {% endif %}
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
 </head>

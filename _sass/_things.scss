@@ -1,18 +1,18 @@
 // Theme of Crisp Blog
-// Copyright(c) David Zhang, 2017
+// Copyright (c) David Zhang, 2018
 
 .things {
   margin-top: 1rem;
 
   .things-item {
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $grey-3;
     display: flex;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     width: 100%;
 
     .things-title {
-      color: $sub-color;
+      color: $grey-9;
       font-size: 1rem;
       min-width: 12.4rem;
     }
@@ -21,11 +21,15 @@
       font-size: .8rem;
       line-height: 1.2rem;
       min-width: 8rem;
-      padding-top: .2rem;
+      padding-bottom: .2rem;
     }
 
     .things-list {
       font-size: .9rem;
+      // scss-lint:disable VendorPrefix
+      -moz-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;
       line-height: 1.4rem;
     }
   }
@@ -43,6 +47,19 @@
       .things-link {
         display: flex;
         padding: .2rem 0;
+
+        div {
+          border-right: 1px solid $grey-3;
+          padding-left: .2rem;
+
+          &:first-of-type {
+            padding-left: 0;
+          }
+
+          &:last-of-type {
+            border-right: 0;
+          }
+        }
 
         a {
           padding-right: .2rem;

@@ -1,18 +1,35 @@
 <!DOCTYPE html>
-<html>
-{% include head.html %}
+<html lang="{{ site.locale }}">
+  
+  {% include head.html %}
+
   <body>
-    <div class="content" id="header">
-      {% include header.html %}
-    </div>
-    <div class="content" id="main-content">
-      <div class="content-wrapper">
-        {{ content }}
+    <!--{% include page-header.html %}-->
+
+    <div class="header" id="header">
+      <div class="wrapper">
+        {% include page-header.html %}
       </div>
     </div>
-    {% include footer.html %}
-    {% include syntax_highlight.html %}
-    {% include disqus.html %}
-    {% include google_analytics.html %}
+
+
+    <div class="wrapper">
+      <div class="content" id="main-content">
+        <div class="content-wrapper">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
+    <!--<section class="main-content">-->
+      <!---->
+      <!--{{ content }}-->
+
+      <!--{% include page-footer.html %}-->
+
+    <!--</section>-->
+
   </body>
 </html>
+
+

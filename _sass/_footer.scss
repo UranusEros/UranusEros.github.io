@@ -2,61 +2,55 @@
 // Copyright(c) David Zhang, 2017
 
 footer {
+  border-top: 1px dotted $grey-3;
   font-size: 1rem;
-  margin-top: 2.4rem;
+  margin-top: 1.2rem;
   overflow: hidden;
   text-align: center;
-
-  .content-wrapper {
-    border-bottom: 0;
-  }
-}
-
-@media (max-width: $breakpoint) {
-  footer {
-    .content-wrapper {
-      padding-left: 0;
-    }
-  }
 }
 
 .contact {
+  display: flex;
   font-size: 1rem;
-  margin-bottom: 3rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: .8rem 0 0;
   text-align: left;
-
-  a {
-    color: $main-color;
-    padding-left: .8rem;
-  }
-
-  &:hover {
-    a {
-      color: $light-color;
-
-      &:hover {
-        color: $main-color;
-      }
-    }
-  }
 
   .contact-links {
     float: right;
+
+    a {
+      color: $grey-9;
+      padding-left: .8rem;
+      text-decoration: none;
+
+      &:first-of-type {
+        padding-left: .2rem;
+      }
+    }
+
+    &:hover {
+      a {
+        color: $grey-5;
+
+        &:hover {
+          color: $grey-9;
+        }
+      }
+    }
   }
 }
 
 @media (max-width: $breakpoint) {
   .contact {
-    .contact-copyright {
-      margin-left: .6rem;
-      padding-top: 1rem;
-      width: 100%;
-    }
+    display: block;
+    padding: .4rem 0 0;
+    text-align: center;
 
     .contact-links {
       float: none;
-      margin-left: -.1rem;
-      width: 100%;
+      margin: .4rem 0;
     }
   }
 }

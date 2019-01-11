@@ -1,9 +1,5 @@
-# ignore Thumb.db
-Thumb.db
-image/Thumb.db
-photo/Thumb.db
-*.swp
-.sass-cache/
-/_site
-*.gem
-/gh-pages
+_site
+.bundle
+.sass-cache
+Gemfile.lock
+.DS_Store

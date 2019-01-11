@@ -1,5 +1,5 @@
 // Theme of Crisp Blog
-// Copyright(c) David Zhang, 2017
+// Copyright (c) David Zhang, 2017
 
 * {
   box-sizing: border-box;
@@ -18,29 +18,41 @@ html {
 }
 
 body {
-  background-color: $bg-color;
-  color: $main-color;
-  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans", "Segoe UI", Roboto, Helvetica, Arial, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+  background-color: $white;
+  color: $grey-9;
+  font-family: "Fira Sans", "Segoe UI", Roboto, Helvetica, Arial, "source-han-sans-simplified-c", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
   font-size: 1rem;
+  -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   height: 100%;
   margin: 0;
+  padding: 0;
   text-align: center;
   word-wrap: break-word;
 
   ::selection {
-    background-color: $link-color;
-    color: $bg-color;
+    background-color: $grey-3;
   }
 }
 
 a {
-  color: $link-color;
+  color: $grey-7;
+  font-weight: 400;
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
   }
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: $breakpoint;
+}
+
+.blog-wrapper {
+  display: block;
 }
 
 .content {
@@ -49,14 +61,17 @@ a {
 }
 
 .content-wrapper {
-  margin: 0 auto;
-  width: $breakpoint;
+  padding: 1.2rem 0 0;
 }
 
 @media (max-width: $breakpoint) {
+  .wrapper {
+    display: block;
+    width: 100%;
+  }
+
   .content-wrapper {
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding: .4rem;
     width: 100%;
   }
 }
